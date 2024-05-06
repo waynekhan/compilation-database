@@ -1,7 +1,14 @@
-#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+typedef struct {
+  int IsOutofBand;
+} SystemConfig;
 
 int main() {
-  printf("Hello, compilation database!");
+  SystemConfig *system_config = NULL;
 
-  return 0;
+  //if (system_config != NULL) {
+    return system_config->IsOutofBand;
+  //}
 }
